@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Vision Board</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>My Vision Board</h1>
+
+        <!-- Vision Board Form -->
+        <form id="visionForm" class="vision-form">
+            <input
+                type="text"
+                id="goalInput"
+                placeholder="Enter your personal goal..."
+            >
+
+            <input
+                type="text"
+                id="affirmationInput"
+                placeholder="Write your daily affirmation..."
+            >
+
+            <input type="file" id="imageInput" accept="image/*">
+
+            <button type="submit" class="add-btn">
+                Add to Board
+            </button>
+        </form>
+
+        <button id="clearAllBtn" class="clear-btn">
+            Clear All
+        </button>
+
+        <!-- Vision Board Display Area -->
+        <section class="vision-board" id="visionBoard"></section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
